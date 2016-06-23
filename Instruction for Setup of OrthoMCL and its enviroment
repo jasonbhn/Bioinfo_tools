@@ -1,8 +1,8 @@
-## DISCLAIMER: 
+# DISCLAIMER: 
 Parts of the instruction are updated and revised copy from the original instruction from orthomcl.org and the 
 repository of github user username juanu. Citations will be at the end of the file. 
 
-### System requirement (cited from the orthomcl website):
+## System requirement (cited from the orthomcl website):
 
 (1) UNIX
   - The OrthoMCL Pairs program has only been tested on UNIX, specifically RedHat 5.8.  
@@ -80,4 +80,3 @@ repository of github user username juanu. Citations will be at the end of the fi
     - 16 hours for the orthmclPairs processing to find pairs
     - 2 hours for MCL to find the groups
 
-###
