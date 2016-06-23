@@ -57,7 +57,7 @@ repository of github user username juanu. Citations will be at the end of the fi
   - standard perl
   UNIX system has standard perl installed in the system, to check installation and version, use command line: 
   ```
-  perl -v
+  perl -v 
   ```
   - DBI libraries: the easier to install one is the one created by Tim Bunce and 
   could be found [here] (http://search.cpan.org/dist/DBI/lib/Bundle/DBI.pm).
