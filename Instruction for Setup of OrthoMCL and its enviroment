@@ -1,0 +1,83 @@
+##DISCLAIMER: 
+Parts of the instruction are updated and revised copy from the original instruction from orthomcl.org and the 
+repository of github user username juanu. Citations will be at the end of the file. 
+
+###System requirement (cited from the orthomcl website):
+
+(1) UNIX
+  - The OrthoMCL Pairs program has only been tested on UNIX, specifically RedHat 5.8.  
+  Other UNIX variants may work, but we can't support them.
+  - The MCL program is UNIX compatible only
+
+(2) BLAST
+  - we recommend NCBI BLAST for two reasons
+     a) theoretically: XXXXXXX
+     b) practically: NCBI BLAST supports a tab delimited output which we provide parsers for.  See Step 7 below.
+  - for large datasets (e.g. 1M proteins) all-v-all BLAST will likely require a compute cluster.
+    Otherwise, it could run for weeks or months. 
+
+(3) Relational Database 
+  - The OrthoMCL Pairs program runs in a relational database.  Supported vendors are:
+     - Oracle
+     - MySql
+  - If you don't already have one of these installed, install MySql, which can be done for free 
+    and without significant systems administration support.  (Follow the instructions we provide below.)
+    ** construction of a database will be introduced in the next section **
+   We realize that it is a little inconvenient to require a relational database.  
+   However, using a relational database as the core technology for orthomclPairs provides speed, 
+   robustness and scalability that would have been very hard to acheive without it.
+  - To Create a Database in Mysql(assume Mysql is licensed and installed on your lab computer):
+    start Mysql: 
+    ```
+    mysql -u root -p
+    ```
+    then enter the password. 
+    Once you got in. Do the following:
+    ```
+    CREATE DATABASE <database_name>
+    ```
+    Use the following to check if successfully created:
+    ```
+    SHOW DATABASES
+    ```
+    To fit in the context for a orthomcl software
+    you need a database named 'orthomcl'
+    !!!! exactly as it is!!! because the later schema and software will assume this database as the computation source!
+    
+(4) Hardware
+  - the hardware requirements vary dramatically with the size of your dataset.
+  - for the Benchmark Dataset, we recommend:
+     - memory: at least 4G
+     - disk: 100G free space.  
+  - you can estimate your disk space needs more accurately when you have completed Step 8 below.
+    You will need at least 5 times the size of the blast results file produced in that step.  
+    90% of the disk space required is to hold that file, load it into the database and index it in the database.
+
+(5) Perl
+  - standard perl
+  UNIX system has standard perl installed in the system, to check installation and version, use command line: 
+  ```
+  perl -v
+  ```
+  - DBI libraries: the easier to install one is the one created by Tim Bunce and 
+  could be found [here] (http://search.cpan.org/dist/DBI/lib/Bundle/DBI.pm).
+  to install and auto-configure the dbi:
+  ```
+  perl -MCPAN -e 'install Bundle::DBI'
+  ```
+  Select sudo, unless you know how you want to customize it yourself. 
+  
+  
+  
+
+(6) MCL program
+  - please see http://www.micans.org/mcl/sec_description1.html
+  The installation steps are clear and correct as described on the webpage.
+
+(7) Time
+  - The Benchmark Dataset took:
+    - 3 days to run all-v-all BLAST on a 500 cpu compute cluster.  
+    - 16 hours for the orthmclPairs processing to find pairs
+    - 2 hours for MCL to find the groups
+
+###
