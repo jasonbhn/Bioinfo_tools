@@ -33,11 +33,11 @@ repository of github user username juanu. Citations will be at the end of the fi
     ```
     then enter the password. 
     Once you got in. Do the following:
-    ```
+    ```sql
     CREATE DATABASE <database_name>
     ```
     Use the following to check if successfully created:
-    ```
+    ```sql
     SHOW DATABASES
     ```
     To fit in the context for a orthomcl software
