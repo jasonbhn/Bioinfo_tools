@@ -17,3 +17,8 @@ find $pathDir -name "*.format" -exec ln {} \;
 ```bash
 cd "$OLDPWD"
 ```
+4.To see the current progress in the server cpu
+
+```bash
+htop 
+```
