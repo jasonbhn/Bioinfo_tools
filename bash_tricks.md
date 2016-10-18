@@ -9,6 +9,6 @@ du -hcs foldername #brief description
 ```bash
 pathDir="/path/to/directory/"
 find $pathDir -name "*.format" -exec ln {} \;
-#{} is whatever you find, and exec will execute a command for whatever you found. 
+# {} is whatever you find, and exec will execute a command for whatever you found. 
 # \ is the full path to what was found 
 ```
