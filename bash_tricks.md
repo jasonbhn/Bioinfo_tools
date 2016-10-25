@@ -26,3 +26,11 @@ htop
 ```bash
 less .git/config
 ```
+
+6.Docker using as a nonroot user
+If you would like to use Docker as a non-root user, you should now consider
+adding your user to the "docker" group with something like:
+```bash
+sudo usermod -aG docker bohanni
+```
+Remember that you will have to log out and back in for this to take effect!
