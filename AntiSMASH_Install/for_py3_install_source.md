@@ -3,7 +3,7 @@ In the folder, a download_database.py for python 3 users are included.
 For your information, here's the major changes from python 2, in case of future modifications, please refer to the following 
 syntax. 
 
-Python 2
+#Python 2
 
 ```python
 print 'Python', python_version()
@@ -17,8 +17,9 @@ Python 2.7.6
 Hello, World!
 Hello, World!
 text print more text on the same line
-Python 3
 ```
+#Python 3
+
 
 ```python
 print('Python', python_version())
