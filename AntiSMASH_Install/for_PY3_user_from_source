@@ -34,3 +34,9 @@ print 'Hello, World!'
     print 'Hello, World!'
                         ^
 SyntaxError: invalid syntax
+
+
+```python
+s = "Python syntax highlighting"
+print s
+```
