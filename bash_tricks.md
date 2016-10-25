@@ -22,3 +22,7 @@ cd "$OLDPWD"
 ```bash
 htop 
 ```
+5. To see hidden file
+```bash
+less .git/config
+```
