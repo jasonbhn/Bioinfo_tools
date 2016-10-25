@@ -26,18 +26,20 @@ print('Hello, World!')
 print("some text,", end="")
 print(' print more text on the same line')
 ```
-
+```
 Python 3.4.1
 Hello, World!
 some text, print more text on the same line
+```
+```python
 print 'Hello, World!'
+```
+
+```
   File "<ipython-input-3-139a7c5835bd>", line 1
     print 'Hello, World!'
                         ^
 SyntaxError: invalid syntax
-
-
-```python
-s = "Python syntax highlighting"
-print s
 ```
+
+
