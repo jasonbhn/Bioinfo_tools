@@ -35,6 +35,7 @@ some text, print more text on the same line
 ```python
 print 'Hello, World!'
 ```
+Note that when trying Python2 syntax, a SyntaxError would be reported
 
 ```
   File "<ipython-input-3-139a7c5835bd>", line 1
