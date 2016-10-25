@@ -9,7 +9,7 @@
 # University of Tuebingen
 # Interfaculty Institute of Microbiology and Infection Medicine
 # Div. of Microbiology/Biotechnology
-#
+# Compatable with Python3, if using python2, please directly download from git and ignore this file
 # License: GNU Affero General Public License v3 or later
 # A copy of GNU AGPL v3 should have been included in this software package in LICENSE.txt.
 
